@@ -11,55 +11,60 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Welcome to my personal webpage</div>
-    <div class="text-5xl font-bold">I'm Amin Charusaie</div>
+    <div class="text-3xl w-full font-bold mb-5">About Me</div>
+    <!-- make a space here-->
+
     <div class="py-2">
       <text class="text-lg">
-        I am a fourth-year PhD student at <a hre="https://is.mpg.de">Max-Planck-Institute for Intelligent Systems</a>
-        and <a href="https://www.uni-tuebingen.de/en">University of Tübingen</a> in Germany. I am an information-theorist and
-        computer scientist, working on a variety of topics in machine learning. I have done my masters at <a href="https://sharif.edu">Sharif University of Technology</a> in Iran in 2019. 
-        During my masters, I done a research internship at <a href="https://www.nycu.edu.tw/nycu/en/index">National Yang Ming Chiao Tung University</a> in Taiwan.
-      
+        I am a fourth-year PhD student at <a hre="https://is.mpg.de", class="na">Max-Planck-Institute for Intelligent Systems</a>
+        and <a href="https://www.uni-tuebingen.de/en", class="na">University of Tübingen</a> in Germany. I am an information-theorist and
+        computer scientist, working on a variety of topics in machine learning. I have done my masters at <a href="https://sharif.edu", class="na">Sharif University of Technology</a> in Iran in 2019. 
+        <br />
+        During my masters, I done a research internship at <a href="https://www.nycu.edu.tw/nycu/en/index", class="na">National Yang Ming Chiao Tung University</a> in Taiwan.
+        <br />
         Besides my academic life, I am interested in Persian poetry, reading and writing fictional stories, and talking philosophy.
-        If you want to chat, just drop me an <a href="mailto:amin.ch90@gmail.com">email</a> or find me on <a href="https://twitter.com/mcharusaie">Twitter</a>. Here, you can
-        find me on <a href="https://www.github.com/AminChrs">GitHub</a> and <a href="https://www.linkedin.com/in/mohammad-amin-charusaie-a026824b/">LinkedIn</a>, and my <a href="https://scholar.google.com/citations?user=r2WtymQAAAAJ&hl=en">Google Scholar</a> page.
+        If you want to chat, just drop me an <a href="mailto:amin.ch90@gmail.com", class="na">email</a> or find me on <a href="https://twitter.com/mcharusaie", class="na">Twitter</a>. Here, you can
+        find me on <a href="https://www.github.com/AminChrs", class="na">GitHub</a> and <a href="https://www.linkedin.com/in/mohammad-amin-charusaie-a026824b/", class="na">LinkedIn</a>, and my <a href="https://scholar.google.com/citations?user=r2WtymQAAAAJ&hl=en", class="na">Google Scholar</a> page.
       </text>
-    </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-5">Machine Learning Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Sample Efficient Learning of Predictors that Complement Humans"
+    img="/Eff.webp"
+    desc="In here, we provide first theoretical results on joint learning of classifier and rejector, we design an active learning algorithm to do so, and we further introduce a set of surrogate losses to make the learn-to-defer training possible for neural networks."
+    url="https://proceedings.mlr.press/v162/charusaie22a/charusaie22a.pdf"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Hermite Polynomial Features for Private Data Generation"
+    img="/DPHP.webp"
+    desc="In this paper, we designed an alternative to random features to generate more efficient representations of a dataset that further could be privacy-preserving with maintaining the quality of the instances."
+    url="https://proceedings.mlr.press/v162/vinaroz22a/vinaroz22a.pdf"
   />
 
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Information Theory Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Compressibility Measures for Affinely Singular Random Vectors"
+    img="/RDE.webp"
+    desc="In this paper, we define a set of singular distributions that naturally arise in autoregressive processes. Then, we obtain R\'enyi information dimension for processes with such probability distribution. We further, find an extension to differential entropy for such class of probability measures. Then, we find information-theoretic and compressed-sensing reconstruction errors for compression of samples of such processes."
+    url="https://arxiv.org/pdf/2001.03884.pdf"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="On the Compressibility of Affinely Singular Random Vectors"
+    img="/ASRV.webp"
+    desc="In this paper, I find a probabilistic extension to sparsity that can lead to similar  guarantees in reconstruction error in compressed sensing problems. This is done by finding R\'enyi Information Dimension for probability measures with singularity."
+    url="https://www.researchgate.net/profile/Mohammad-Amin-Charusaie/publication/343842135_On_the_Compressibility_of_Affinely_Singular_Random_Vectors/links/5f4d151d299bf13c5068a83f/On-the-Compressibility-of-Affinely-Singular-Random-Vectors.pdf"
+  />
+<!-- 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
@@ -78,5 +83,5 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>
